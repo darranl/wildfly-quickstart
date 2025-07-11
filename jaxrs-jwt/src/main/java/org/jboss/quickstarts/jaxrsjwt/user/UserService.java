@@ -25,7 +25,8 @@ public class UserService {
 
     private static final Map<String, User> USER_DB = Map.ofEntries(
             Map.entry("customer", new User("customer", "customerpw", "customer")),
-            Map.entry("admin", new User("admin", "adminpw", "admin"))
+            Map.entry("admin", new User("admin", "adminpw", "admin")),
+            Map.entry("customer@elytron.org", new User("customer@elytron.org", "customerpw", "customer"))
     );
 
     public User authenticate(final String username, final String password) throws Exception {
